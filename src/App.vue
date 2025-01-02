@@ -5,7 +5,7 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <header>
-    <h1>Header works</h1>
+    <h1>Main Comp works</h1>
 
     <div class="wrapper">
       <HelloWorld />
