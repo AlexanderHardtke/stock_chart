@@ -4,4 +4,6 @@ body {
   height: 100vh;
   background: radial-gradient(71.11% 100% at 50% 0%, #020204 14.6%, #011F35 100%);
   color: whitesmoke;
+  display: flex;
+  justify-content: center;
 }

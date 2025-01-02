@@ -1,20 +1,45 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import ChartCard from './components/Chart-card.vue'
+import PieChartCard from './components/Pie-chart-card.vue'
+import RevenueGrowth from './components/Revenue-growth.vue'
+import NetIncomeChart from './components/Net-Income-chart.vue'
+import GrossMargin from './components/Gross-margin.vue'
 </script>
 
 <template>
-  <header>
-    <h1>Main Comp works</h1>
+    
+  <wrapper>
+    <hr><h1>The Magnificent Seven Companies</h1>
+  </wrapper>
 
-    <div class="wrapper">
-      <HelloWorld />
+    <wrapper> 
+    <ChartCard />
+    <PieChartCard />
+  </wrapper>
 
-    </div>
-  </header>
+  <wrapper> 
+    <NetIncomeChart></NetIncomeChart>
+    <GrossMargin></GrossMargin>
+    <RevenueGrowth></RevenueGrowth>
+  </wrapper>
 
-  <RouterView />
 </template>
 
 <style scoped>
+wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 1240px;
+  gap: 32px;
+  margin-top: 32px;
+}
+
+hr {
+  position: absolute;
+  left: 0;
+  width: 100px;
+  height: 0px;
+  border: 4px solid #38dbff;
+}
 </style>
