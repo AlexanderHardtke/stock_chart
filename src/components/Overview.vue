@@ -1,6 +1,6 @@
 <script>
 export default {
-    name: "PieChartCard",
+    name: "Overview",
 };
 </script>
 
@@ -13,13 +13,13 @@ export default {
 
 <style scoped>
 .chart-card {
-    display: block;
-    background-color: #011F35;
+    background-color: #023A6233;
     border-radius: 16px;
-    padding: 24px 32px;
+    padding: 24px;
+    gap: 24px;
     min-width: 300px;
-    width: 40%;
-    min-height: 225px;
-    height: 27.5%;
+    width: 100%;
+    height: 20%;
+    min-height: 100px;
 }
 </style>
